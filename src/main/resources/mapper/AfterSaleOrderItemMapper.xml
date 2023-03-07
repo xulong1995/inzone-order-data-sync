@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.AfterSaleOrderItemMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.AfterSaleOrderItem">
+    <!--@mbg.generated-->
+    <!--@Table AFTER_SALE_ORDER_ITEM-->
+    <id column="AFTER_SALE_ITEM_ID" jdbcType="VARCHAR" property="afterSaleItemId" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="AFTER_SALE_ORDER_ID" jdbcType="VARCHAR" property="afterSaleOrderId" />
+    <result column="ORDER_ITEM_ID" jdbcType="VARCHAR" property="orderItemId" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="SKU_ID" jdbcType="VARCHAR" property="skuId" />
+    <result column="SKU_CODE" jdbcType="VARCHAR" property="skuCode" />
+    <result column="SKU_NAME" jdbcType="VARCHAR" property="skuName" />
+    <result column="SPU_ID" jdbcType="VARCHAR" property="spuId" />
+    <result column="SPU_NAME" jdbcType="VARCHAR" property="spuName" />
+    <result column="SPU_IMG_URL" jdbcType="VARCHAR" property="spuImgUrl" />
+    <result column="SKU_PRICE" jdbcType="VARCHAR" property="skuPrice" />
+    <result column="UNIT" jdbcType="VARCHAR" property="unit" />
+    <result column="APPLY_AMT" jdbcType="VARCHAR" property="applyAmt" />
+    <result column="REAL_REFUND_AMT" jdbcType="VARCHAR" property="realRefundAmt" />
+    <result column="LUNCH_BOX_FEE" jdbcType="VARCHAR" property="lunchBoxFee" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="PRODUCT_TYPE" jdbcType="VARCHAR" property="productType" />
+    <result column="CONSUMPOINTS" jdbcType="VARCHAR" property="consumpoints" />
+    <result column="DISCOUNT" jdbcType="VARCHAR" property="discount" />
+    <result column="DISCOUPON" jdbcType="VARCHAR" property="discoupon" />
+    <result column="POINTSCASH" jdbcType="VARCHAR" property="pointscash" />
+    <result column="APPLY_NUMBER" jdbcType="VARCHAR" property="applyNumber" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    AFTER_SALE_ITEM_ID, CREATE_DATE, AFTER_SALE_ORDER_ID, ORDER_ITEM_ID, ORDER_ID, SKU_ID, 
+    SKU_CODE, SKU_NAME, SPU_ID, SPU_NAME, SPU_IMG_URL, SKU_PRICE, UNIT, APPLY_AMT, REAL_REFUND_AMT, 
+    LUNCH_BOX_FEE, UPDATE_DATE, PRODUCT_TYPE, CONSUMPOINTS, DISCOUNT, DISCOUPON, POINTSCASH, 
+    APPLY_NUMBER
+  </sql>
+</mapper>

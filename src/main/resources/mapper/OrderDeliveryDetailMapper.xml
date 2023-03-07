@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.OrderDeliveryDetailMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.OrderDeliveryDetail">
+    <!--@mbg.generated-->
+    <!--@Table ORDER_DELIVERY_DETAIL-->
+    <id column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="DELIVERY_TYPE" jdbcType="DECIMAL" property="deliveryType" />
+    <result column="PROVINCE" jdbcType="VARCHAR" property="province" />
+    <result column="CITY" jdbcType="VARCHAR" property="city" />
+    <result column="AREA" jdbcType="VARCHAR" property="area" />
+    <result column="STREET" jdbcType="VARCHAR" property="street" />
+    <result column="DETAIL_ADDRESS" jdbcType="VARCHAR" property="detailAddress" />
+    <result column="LON" jdbcType="DECIMAL" property="lon" />
+    <result column="LAT" jdbcType="DECIMAL" property="lat" />
+    <result column="RECEIVER_NAME" jdbcType="VARCHAR" property="receiverName" />
+    <result column="RECEIVER_PHONE" jdbcType="VARCHAR" property="receiverPhone" />
+    <result column="MODIFY_ADDRESS_COUNT" jdbcType="DECIMAL" property="modifyAddressCount" />
+    <result column="OPERATOR" jdbcType="VARCHAR" property="operator" />
+    <result column="DELIVERER_NO" jdbcType="VARCHAR" property="delivererNo" />
+    <result column="DELIVERER_NAME" jdbcType="VARCHAR" property="delivererName" />
+    <result column="DELIVERER_PHONE" jdbcType="VARCHAR" property="delivererPhone" />
+    <result column="OUT_STOCK_TIME" jdbcType="TIMESTAMP" property="outStockTime" />
+    <result column="DELIVERER_TIME" jdbcType="TIMESTAMP" property="delivererTime" />
+    <result column="EXPECTED_DELIVERER_TIME" jdbcType="TIMESTAMP" property="expectedDelivererTime" />
+    <result column="RECEIVING_TIME" jdbcType="TIMESTAMP" property="receivingTime" />
+    <result column="SIGNED_TIME" jdbcType="TIMESTAMP" property="signedTime" />
+    <result column="GMT_CREATE" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="GMT_MODIFIED" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="TO_ERP_TIME" jdbcType="TIMESTAMP" property="toErpTime" />
+    <result column="TO_ERP_STATUS" jdbcType="VARCHAR" property="toErpStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ORDER_ID, DELIVERY_TYPE, PROVINCE, CITY, AREA, STREET, DETAIL_ADDRESS, LON, LAT, 
+    RECEIVER_NAME, RECEIVER_PHONE, MODIFY_ADDRESS_COUNT, "OPERATOR", DELIVERER_NO, DELIVERER_NAME, 
+    DELIVERER_PHONE, OUT_STOCK_TIME, DELIVERER_TIME, EXPECTED_DELIVERER_TIME, RECEIVING_TIME, 
+    SIGNED_TIME, GMT_CREATE, GMT_MODIFIED, TO_ERP_TIME, TO_ERP_STATUS
+  </sql>
+</mapper>

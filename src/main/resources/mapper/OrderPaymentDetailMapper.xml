@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.OrderPaymentDetailMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.OrderPaymentDetail">
+    <!--@mbg.generated-->
+    <!--@Table ORDER_PAYMENT_DETAIL-->
+    <id column="ID" jdbcType="DECIMAL" property="id" />
+    <result column="PAY_ID" jdbcType="VARCHAR" property="payId" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="PAY_TYPE" jdbcType="DECIMAL" property="payType" />
+    <result column="PAY_AMOUNT" jdbcType="VARCHAR" property="payAmount" />
+    <result column="GMT_CREATE" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="GMT_MODIFIED" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="PARENT_ORDER_ID" jdbcType="VARCHAR" property="parentOrderId" />
+    <result column="YIN_DOU" jdbcType="VARCHAR" property="yinDou" />
+    <result column="MAN_YI_DOU" jdbcType="VARCHAR" property="manYiDou" />
+    <result column="FAN_LI" jdbcType="VARCHAR" property="fanLi" />
+    <result column="FEE" jdbcType="VARCHAR" property="fee" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ID, PAY_ID, ORDER_ID, PAY_TYPE, PAY_AMOUNT, GMT_CREATE, GMT_MODIFIED, PARENT_ORDER_ID, 
+    YIN_DOU, MAN_YI_DOU, FAN_LI, FEE
+  </sql>
+</mapper>

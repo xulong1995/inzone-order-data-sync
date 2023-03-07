@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.OrderItemMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.OrderItem">
+    <!--@mbg.generated-->
+    <!--@Table ORDER_ITEM-->
+    <id column="ORDER_ITEM_ID" jdbcType="VARCHAR" property="orderItemId" />
+    <result column="GMT_CREATE" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="PRODUCT_TYPE" jdbcType="DECIMAL" property="productType" />
+    <result column="PRODUCT_SOURCE" jdbcType="VARCHAR" property="productSource" />
+    <result column="SPU_ID" jdbcType="VARCHAR" property="spuId" />
+    <result column="SKU_NAME" jdbcType="VARCHAR" property="skuName" />
+    <result column="FX_STORE_ID" jdbcType="VARCHAR" property="fxStoreId" />
+    <result column="SKU_ID" jdbcType="VARCHAR" property="skuId" />
+    <result column="SKU_NUM" jdbcType="VARCHAR" property="skuNum" />
+    <result column="SALE_QUANTITY" jdbcType="VARCHAR" property="saleQuantity" />
+    <result column="SALE_PRICE" jdbcType="VARCHAR" property="salePrice" />
+    <result column="PRODUCT_UNIT" jdbcType="VARCHAR" property="productUnit" />
+    <result column="ORIGIN_AMOUNT" jdbcType="VARCHAR" property="originAmount" />
+    <result column="PAY_AMOUNT" jdbcType="VARCHAR" property="payAmount" />
+    <result column="GMT_MODIFIED" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="CONSUMPOINTS" jdbcType="VARCHAR" property="consumpoints" />
+    <result column="DISCOUNT" jdbcType="VARCHAR" property="discount" />
+    <result column="DISCOUPON" jdbcType="VARCHAR" property="discoupon" />
+    <result column="POINTSCASH" jdbcType="VARCHAR" property="pointscash" />
+    <result column="GIFTAMOUNT" jdbcType="VARCHAR" property="giftamount" />
+    <result column="ROW_NO" jdbcType="VARCHAR" property="rowNo" />
+    <result column="LOCATION_ID" jdbcType="VARCHAR" property="locationId" />
+    <result column="COUPON_ID" jdbcType="VARCHAR" property="couponId" />
+    <result column="LIVE_ROOM_ID" jdbcType="VARCHAR" property="liveRoomId" />
+    <result column="DWZHXS" jdbcType="VARCHAR" property="dwzhxs" />
+    <result column="PK_NUMBER" jdbcType="VARCHAR" property="pkNumber" />
+    <result column="EXT_JSON" jdbcType="VARCHAR" property="extJson" />
+    <result column="LUNCHBOXFEE" jdbcType="VARCHAR" property="lunchboxfee" />
+    <result column="SPU_NAME" jdbcType="VARCHAR" property="spuName" />
+    <result column="SUPPLIER" jdbcType="VARCHAR" property="supplier" />
+    <result column="GZ" jdbcType="VARCHAR" property="gz" />
+    <result column="BRAND" jdbcType="VARCHAR" property="brand" />
+    <result column="CATEGORY" jdbcType="VARCHAR" property="category" />
+    <result column="PRODUCT_IMG" jdbcType="VARCHAR" property="productImg" />
+    <result column="ORDER_ITEM_STATUS" jdbcType="DECIMAL" property="orderItemStatus" />
+    <result column="BARCODE" jdbcType="VARCHAR" property="barcode" />
+    <result column="DIRECT_DESCENT" jdbcType="VARCHAR" property="directDescent" />
+    <result column="FULL_MINUS" jdbcType="VARCHAR" property="fullMinus" />
+    <result column="FULL_ARRIVAL" jdbcType="VARCHAR" property="fullArrival" />
+    <result column="FULL_DISCOUNT" jdbcType="VARCHAR" property="fullDiscount" />
+    <result column="COUPON_AMOUNT" jdbcType="VARCHAR" property="couponAmount" />
+    <result column="FX_PER_PHONE" jdbcType="VARCHAR" property="fxPerPhone" />
+    <result column="PER_EXTRACT_METHOD" jdbcType="VARCHAR" property="perExtractMethod" />
+    <result column="PER_EXTRACT_RATIO" jdbcType="VARCHAR" property="perExtractRatio" />
+    <result column="STORE_EXTRACT_METHOD" jdbcType="VARCHAR" property="storeExtractMethod" />
+    <result column="STORE_EXTRACT_RATIO" jdbcType="VARCHAR" property="storeExtractRatio" />
+    <result column="SKU_NO" jdbcType="VARCHAR" property="skuNo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ORDER_ITEM_ID, GMT_CREATE, ORDER_ID, PRODUCT_TYPE, PRODUCT_SOURCE, SPU_ID, SKU_NAME,
+    FX_STORE_ID, SKU_ID, SKU_NUM, SALE_QUANTITY, SALE_PRICE, PRODUCT_UNIT, ORIGIN_AMOUNT, 
+    PAY_AMOUNT, GMT_MODIFIED, CONSUMPOINTS, DISCOUNT, DISCOUPON, POINTSCASH, GIFTAMOUNT, 
+    ROW_NO, LOCATION_ID, COUPON_ID, LIVE_ROOM_ID, DWZHXS, PK_NUMBER, EXT_JSON, LUNCHBOXFEE, 
+    SPU_NAME, SUPPLIER, GZ, BRAND, CATEGORY, PRODUCT_IMG, ORDER_ITEM_STATUS, BARCODE, 
+    DIRECT_DESCENT, FULL_MINUS, FULL_ARRIVAL, FULL_DISCOUNT, COUPON_AMOUNT, FX_PER_PHONE, 
+    PER_EXTRACT_METHOD, PER_EXTRACT_RATIO, STORE_EXTRACT_METHOD, STORE_EXTRACT_RATIO, 
+    SKU_NO
+  </sql>
+</mapper>

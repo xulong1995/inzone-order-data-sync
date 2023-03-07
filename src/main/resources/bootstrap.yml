@@ -1,0 +1,50 @@
+server:
+  port: 8686
+#  servlet:
+#    session:
+#      timeout: 30m
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: inzone-order-data-sync
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${config-server-address:10.160.56.250:8848}
+        namespace: ${config-server-space:b30ae310-656e-4ee4-a595-c4c4f41e66fb}
+        group: ${config-server-group:inzone-mall}
+        username: ${nacos-username:}
+        password: ${nacos-password:}
+      config:
+        server-addr: ${config-server-address:10.160.56.250:8848}
+        file-extension: yaml
+        namespace: ${config-server-space:b30ae310-656e-4ee4-a595-c4c4f41e66fb}
+        group: ${config-server-group:inzone-mall}
+        username: ${nacos-username:}
+        password: ${nacos-password:}
+        shared-configs:
+          - data-id: core.yaml
+            group: inzone-mall
+            refresh: true
+          - data-id: cloud-nacos.yaml
+            group: inzone-mall
+            refresh: true
+          - data-id: rocketmq.yaml
+            group: inzone-mall
+            refresh: true
+          - data-id: inzone-job.yaml
+            group: inzone-mall
+            refresh: true
+#          - data-id: logback-spring.xml
+#            group: log-common
+#            refresh: true
+  #        extension-configs:
+  #          - data-id: inzone-member-config.yaml
+  #            group: inzone-mall
+  #            refresh: true
+#logging:
+#  level:
+#    root: info
+
+

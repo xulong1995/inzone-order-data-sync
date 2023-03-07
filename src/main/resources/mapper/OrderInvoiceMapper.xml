@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.OrderInvoiceMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.OrderInvoice">
+    <!--@mbg.generated-->
+    <!--@Table ORDER_INVOICE-->
+    <result column="ID" jdbcType="DECIMAL" property="id" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="INVOICE_TYPE" jdbcType="VARCHAR" property="invoiceType" />
+    <result column="INVOICE_TITLE" jdbcType="VARCHAR" property="invoiceTitle" />
+    <result column="INVOICE_CONTENT" jdbcType="VARCHAR" property="invoiceContent" />
+    <result column="INVOICE_AMOUNT" jdbcType="VARCHAR" property="invoiceAmount" />
+    <result column="INVOICE_TAX" jdbcType="VARCHAR" property="invoiceTax" />
+    <result column="INVOICE_TAX_NO" jdbcType="VARCHAR" property="invoiceTaxNo" />
+    <result column="VAT_COMPANY_NAME" jdbcType="VARCHAR" property="vatCompanyName" />
+    <result column="VAT_TELPHONE" jdbcType="VARCHAR" property="vatTelphone" />
+    <result column="VAT_BANK_NAME" jdbcType="VARCHAR" property="vatBankName" />
+    <result column="INVOICE_EXTRACTION_CODE" jdbcType="VARCHAR" property="invoiceExtractionCode" />
+    <result column="VAT_BANK_ACCOUNT" jdbcType="VARCHAR" property="vatBankAccount" />
+    <result column="PAY_MACHINE_NO" jdbcType="VARCHAR" property="payMachineNo" />
+    <result column="INVOICE_STATUS" jdbcType="VARCHAR" property="invoiceStatus" />
+    <result column="FLUSH_AFTER_SALE_ID" jdbcType="VARCHAR" property="flushAfterSaleId" />
+    <result column="RED_FLUSH_STATUS" jdbcType="VARCHAR" property="redFlushStatus" />
+    <result column="RED_FLUSH_TIME" jdbcType="TIMESTAMP" property="redFlushTime" />
+    <result column="CREATED_TIME" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="INVOICE_SERIAL_NO" jdbcType="VARCHAR" property="invoiceSerialNo" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ID, ORDER_ID, INVOICE_TYPE, INVOICE_TITLE, INVOICE_CONTENT, INVOICE_AMOUNT, INVOICE_TAX, 
+    INVOICE_TAX_NO, VAT_COMPANY_NAME, VAT_TELPHONE, VAT_BANK_NAME, INVOICE_EXTRACTION_CODE, 
+    VAT_BANK_ACCOUNT, PAY_MACHINE_NO, INVOICE_STATUS, FLUSH_AFTER_SALE_ID, RED_FLUSH_STATUS, 
+    RED_FLUSH_TIME, CREATED_TIME, INVOICE_SERIAL_NO
+  </sql>
+</mapper>

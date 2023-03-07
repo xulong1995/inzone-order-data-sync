@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.ordercenter.mapper.CenterOrderDeliveryLogisticsMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.ordercenter.entity.CenterOrderDeliveryLogistics">
+    <!--@mbg.generated-->
+    <!--@Table order_delivery_logistics-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="order_item_id" jdbcType="VARCHAR" property="orderItemId" />
+    <result column="wx_token" jdbcType="VARCHAR" property="wxToken" />
+    <result column="logistics_sn" jdbcType="VARCHAR" property="logisticsSn" />
+    <result column="signed_time" jdbcType="TIMESTAMP" property="signedTime" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, order_id, order_item_id, wx_token, logistics_sn, signed_time, update_date, create_date
+  </sql>
+</mapper>

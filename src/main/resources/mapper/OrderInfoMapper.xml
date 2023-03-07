@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.OrderInfoMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.OrderInfo">
+    <!--@mbg.generated-->
+    <!--@Table ORDER_INFO-->
+    <id column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="GMT_CREATE" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="CHANNEL_ID" jdbcType="VARCHAR" property="channelId" />
+    <result column="APPLICATION_ID" jdbcType="VARCHAR" property="applicationId" />
+
+    <result column="PARENT_ORDER_ID" jdbcType="VARCHAR" property="parentOrderId" />
+    <result column="ORDER_TYPE" jdbcType="DECIMAL" property="orderType" />
+    <result column="ORDER_STATUS" jdbcType="DECIMAL" property="orderStatus" />
+    <result column="DELIVERY_TYPE" jdbcType="DECIMAL" property="deliveryType" />
+    <result column="STORE_ID" jdbcType="VARCHAR" property="storeId" />
+    <result column="STORE_CODE" jdbcType="VARCHAR" property="storeCode" />
+    <result column="CUSTOMER_ID" jdbcType="VARCHAR" property="customerId" />
+    <result column="CID" jdbcType="VARCHAR" property="cid" />
+    <result column="PHONE" jdbcType="VARCHAR" property="phone" />
+    <result column="TOTAL_AMOUNT" jdbcType="VARCHAR" property="totalAmount" />
+    <result column="PAY_AMOUNT" jdbcType="VARCHAR" property="payAmount" />
+    <result column="USER_REMARK" jdbcType="VARCHAR" property="userRemark" />
+    <result column="DELETE_STATUS" jdbcType="DECIMAL" property="deleteStatus" />
+    <result column="COMMENT_STATUS" jdbcType="DECIMAL" property="commentStatus" />
+    <result column="GIFTAMOUNT" jdbcType="VARCHAR" property="giftamount" />
+    <result column="CONSUMPOINTS" jdbcType="VARCHAR" property="consumpoints" />
+    <result column="DISCOUPON" jdbcType="VARCHAR" property="discoupon" />
+    <result column="DISCOUNT" jdbcType="VARCHAR" property="discount" />
+    <result column="POINTSCASH" jdbcType="VARCHAR" property="pointscash" />
+    <result column="CANCEL_TYPE" jdbcType="VARCHAR" property="cancelType" />
+    <result column="CANCEL_REASON" jdbcType="VARCHAR" property="cancelReason" />
+    <result column="PICKUPCODE" jdbcType="VARCHAR" property="pickupcode" />
+    <result column="COUPON_ID" jdbcType="VARCHAR" property="couponId" />
+    <result column="SHOPPE_ID" jdbcType="VARCHAR" property="shoppeId" />
+    <result column="TERM_INVOICENO" jdbcType="VARCHAR" property="termInvoiceno" />
+    <result column="SERVICE_CHARGE" jdbcType="VARCHAR" property="serviceCharge" />
+    <result column="Z_FREIGHT" jdbcType="VARCHAR" property="zFreight" />
+    <result column="FREIGHT_DISCOUNT" jdbcType="VARCHAR" property="freightDiscount" />
+    <result column="PACKAGE_FEE" jdbcType="VARCHAR" property="packageFee" />
+    <result column="LUNCHBOXFEE" jdbcType="VARCHAR" property="lunchboxfee" />
+    <result column="EXT_JSON" jdbcType="VARCHAR" property="extJson" />
+    <result column="WRITE_OFF_PHONE" jdbcType="VARCHAR" property="writeOffPhone" />
+    <result column="PERFORMANCE_CHANNEL" jdbcType="VARCHAR" property="performanceChannel" />
+    <result column="EXPIRE_TIME" jdbcType="TIMESTAMP" property="expireTime" />
+    <result column="CANCEL_TIME" jdbcType="TIMESTAMP" property="cancelTime" />
+    <result column="FINISH_TIME" jdbcType="TIMESTAMP" property="finishTime" />
+    <result column="GMT_MODIFIED" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="TO_ERP_TIME" jdbcType="TIMESTAMP" property="toErpTime" />
+    <result column="TO_ERP_STATUS" jdbcType="VARCHAR" property="toErpStatus" />
+    <result column="DIRECT_DESCENT" jdbcType="VARCHAR" property="directDescent" />
+    <result column="FULL_MINUS" jdbcType="VARCHAR" property="fullMinus" />
+    <result column="FULL_ARRIVAL" jdbcType="VARCHAR" property="fullArrival" />
+    <result column="FULL_DISCOUNT" jdbcType="VARCHAR" property="fullDiscount" />
+    <result column="COUPON_AMOUNT" jdbcType="VARCHAR" property="couponAmount" />
+    <result column="IF_CALL_OMNI_CHANNEL" jdbcType="VARCHAR" property="ifCallOmniChannel" />
+    <result column="ORDER_SN" jdbcType="VARCHAR" property="orderSn" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ORDER_ID, GMT_CREATE, CHANNEL_ID,APPLICATION_ID,PARENT_ORDER_ID, ORDER_TYPE, ORDER_STATUS, DELIVERY_TYPE,
+    STORE_ID, STORE_CODE, CUSTOMER_ID, CID, PHONE, TOTAL_AMOUNT, PAY_AMOUNT, USER_REMARK, 
+    DELETE_STATUS, COMMENT_STATUS, GIFTAMOUNT, CONSUMPOINTS, DISCOUPON, DISCOUNT, POINTSCASH, 
+    CANCEL_TYPE, CANCEL_REASON, PICKUPCODE, COUPON_ID, SHOPPE_ID, TERM_INVOICENO, SERVICE_CHARGE, 
+    Z_FREIGHT, FREIGHT_DISCOUNT, PACKAGE_FEE, LUNCHBOXFEE, EXT_JSON, WRITE_OFF_PHONE, 
+    PERFORMANCE_CHANNEL, EXPIRE_TIME, CANCEL_TIME, FINISH_TIME, GMT_MODIFIED, TO_ERP_TIME, 
+    TO_ERP_STATUS, DIRECT_DESCENT, FULL_MINUS, FULL_ARRIVAL, FULL_DISCOUNT, COUPON_AMOUNT, 
+    IF_CALL_OMNI_CHANNEL, ORDER_SN
+  </sql>
+</mapper>

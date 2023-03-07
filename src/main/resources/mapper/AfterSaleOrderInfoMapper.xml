@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.inzone.mall.yunguangjie.mapper.AfterSaleOrderInfoMapper">
+  <resultMap id="BaseResultMap" type="com.inzone.mall.yunguangjie.entity.AfterSaleOrderInfo">
+    <!--@mbg.generated-->
+    <!--@Table AFTER_SALE_ORDER_INFO-->
+    <id column="AFTER_SALE_ORDER_ID" jdbcType="VARCHAR" property="afterSaleOrderId" />
+    <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+    <result column="EFUTURE_AFTERSALE_ID" jdbcType="VARCHAR" property="efutureAftersaleId" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="APPLY_AMT" jdbcType="VARCHAR" property="applyAmt" />
+    <result column="REAL_REFUND_AMT" jdbcType="VARCHAR" property="realRefundAmt" />
+    <result column="DISCOUNT" jdbcType="VARCHAR" property="discount" />
+    <result column="GIFTAMOUNT" jdbcType="VARCHAR" property="giftamount" />
+    <result column="POINTSCASH" jdbcType="VARCHAR" property="pointscash" />
+    <result column="CONSUMPOINTS" jdbcType="VARCHAR" property="consumpoints" />
+    <result column="DISCOUPON" jdbcType="VARCHAR" property="discoupon" />
+    <result column="PROCEDURE_FEE" jdbcType="VARCHAR" property="procedureFee" />
+    <result column="DELIVERY_FEE" jdbcType="VARCHAR" property="deliveryFee" />
+    <result column="PKG_FEE" jdbcType="VARCHAR" property="pkgFee" />
+    <result column="PHONE" jdbcType="VARCHAR" property="phone" />
+    <result column="LUNCH_BOX_FEE" jdbcType="VARCHAR" property="lunchBoxFee" />
+    <result column="APPLYER_TYPE" jdbcType="VARCHAR" property="applyerType" />
+    <result column="APPLY_REASON" jdbcType="VARCHAR" property="applyReason" />
+    <result column="PROCESS_REASON" jdbcType="VARCHAR" property="processReason" />
+    <result column="OPERATOR" jdbcType="VARCHAR" property="operator" />
+    <result column="IMG_URL" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="CHANNEL_ID" jdbcType="VARCHAR" property="channelId" />
+    <result column="INVOICE_STATE" jdbcType="VARCHAR" property="invoiceState" />
+    <result column="INVOICE_DATE" jdbcType="TIMESTAMP" property="invoiceDate" />
+    <result column="AUDIT_DATE" jdbcType="TIMESTAMP" property="auditDate" />
+    <result column="SETTLE_DATE" jdbcType="TIMESTAMP" property="settleDate" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="TERMINAL_SERIL_NO" jdbcType="VARCHAR" property="terminalSerilNo" />
+    <result column="TO_ERP_TIME" jdbcType="TIMESTAMP" property="toErpTime" />
+    <result column="TO_ERP_STATUS" jdbcType="VARCHAR" property="toErpStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    AFTER_SALE_ORDER_ID, CREATE_DATE, ORDER_ID, EFUTURE_AFTERSALE_ID, "STATUS", APPLY_AMT, 
+    REAL_REFUND_AMT, DISCOUNT, GIFTAMOUNT, POINTSCASH, CONSUMPOINTS, DISCOUPON, PROCEDURE_FEE, 
+    DELIVERY_FEE, PKG_FEE, PHONE, LUNCH_BOX_FEE, APPLYER_TYPE, APPLY_REASON, PROCESS_REASON, 
+    "OPERATOR", IMG_URL, CHANNEL_ID, INVOICE_STATE, INVOICE_DATE, AUDIT_DATE, SETTLE_DATE, 
+    UPDATE_DATE, TERMINAL_SERIL_NO, TO_ERP_TIME, TO_ERP_STATUS
+  </sql>
+</mapper>
